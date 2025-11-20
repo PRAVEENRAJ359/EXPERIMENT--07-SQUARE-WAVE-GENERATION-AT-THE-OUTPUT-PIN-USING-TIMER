@@ -255,7 +255,8 @@ void assert_failed(uint8_t *file, uint32_t line)
 ## DUTY CYCLE AND FREQUENCY CALCULATION:
 
 FOR PULSE AT 500
-<img width="1748" height="861" alt="image" src="https://github.com/user-attachments/assets/c8ea55c2-6b77-4f8f-9daa-79bc280c9b1f" />
+![WhatsApp Image 2025-11-20 at 11 30 57_9ee92216](https://github.com/user-attachments/assets/3f3ae2f2-50e6-446c-acde-5d110e27d997)
+
 ```
 TON = 3 x 10 x 10^-6
     = 0.00003
@@ -272,41 +273,45 @@ DUTY CYCLE = TON /(TON+TOFF)
       IN % =0.5*100 
            = 50 %
  ```         
-FOR PULSE AT 700
-<img width="1752" height="864" alt="image" src="https://github.com/user-attachments/assets/b2aaf94e-a080-467f-be34-740f5582ff5c" />
+FOR PULSE AT 750
+![WhatsApp Image 2025-11-20 at 11 30 47_a40f3e86](https://github.com/user-attachments/assets/0b4227eb-120b-4517-9ec8-d12286b87eee)
+
 ```
-TON = 4 x 10 x 10^-6
-    = 0.00004
-TOFF= 2 x 10 x 10^-6
-    = 0.00002
+TON = 4.5 x 10 x 10^-6
+    = 45 x 10^-6s
+TOFF= 1.5 x 10 x 10^-6
+    = 15 x 10-6s
 TOTAL TIME = TON + TOFF
-           = 0.00004+0.00002
-           = 0.00006
+           = (45+15) x 10^-6
+           = (60x10^-6)s
 FREQUENCY = 1/(TOTAL TIME)
           = 16666.7
 DUTY CYCLE = TON /(TON+TOFF)
-           = 0.00004/0.00006
-           = 0.7
+           = 0.000045/0.00006
+           = 0.75
       IN % =0.7*100 
-           = 70 %
+           = 75 %
+
  ```          
-FOR PULSE AT 900
-<img width="1763" height="850" alt="image" src="https://github.com/user-attachments/assets/e32c31e8-fd4d-4e16-9ce0-acf2d56cc8dd" />
+FOR PULSE AT 250
+![WhatsApp Image 2025-11-20 at 11 31 07_ede7c4a2](https://github.com/user-attachments/assets/043ea70d-c2cd-4cf0-812a-b9242385ac9f)
+
 ```
-TON = 1 x 50 x 10^-6
-    = 0.00005
-TOFF= 0.1 x 50 x 10^-6
-    = 0.000005
+TON = 15 x 10 x 10^-6
+    = 0.000015
+TOFF= 4.5 x 10 x 10^-6
+    = 0.000045
 TOTAL TIME = TON + TOFF
            = 0.00005 + 0.000005
            = 0.000055
 FREQUENCY = 1/(TOTAL TIME)
-          = 18181.82
+          = 16666.7
 DUTY CYCLE = TON /(TON+TOFF)
-           = 0.00005/0.000055
-           = 0.9
-      IN % =0.9*100 
-           = 90 %
+           = 0.000015/0.00006
+           = 0.25
+      IN % =0.25*100 
+           = 25 %
+
 ```
 
 ## Result :
